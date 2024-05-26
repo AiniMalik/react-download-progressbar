@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import throttle from 'lodash.throttle'
-import Progress_bar from './Progress_bar'
+import ProgressBar from './ProgressBar'
 function App() {
   const [progress, setProgress] = useState(0)
   const updateProgress = throttle((value) => {
@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className='innerWrapper'>
+        <div className="innerWrapper">
           <p className="App-logo">WaterFall</p>
           <video width="320" height="240" controls>
             <source
@@ -53,10 +53,14 @@ function App() {
               type="video/mp4"
             />
           </video>
-          <a className="App-link" onClick={handleOnClick}>
+          <a
+            className="App-link"
+            href="https://res.cloudinary.com/dcznpsql4/video/upload/v1716279808/Assets/waterfall_bq3ss1.mp4"
+            onClick={handleOnClick}
+          >
             Download
           </a>
-          <Progress_bar
+          <ProgressBar
             bgcolor="green"
             progress={progress.toFixed()}
             height={7}
