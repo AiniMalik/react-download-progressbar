@@ -25,6 +25,12 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0d0e0e;
   cursor: pointer;
+  height: 40px;
+  background-color: rgb(8, 211, 218);
+  border: none;
+  margin-top: 7px;
+  font-weight: 700;
+  border-radius: 5px;
 }

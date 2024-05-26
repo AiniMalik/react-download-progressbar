@@ -53,15 +53,11 @@ function App() {
               type="video/mp4"
             />
           </video>
-          <a
-            className="App-link"
-            href="https://res.cloudinary.com/dcznpsql4/video/upload/v1716279808/Assets/waterfall_bq3ss1.mp4"
-            onClick={handleOnClick}
-          >
+          <button className="App-link" href="" onClick={handleOnClick}>
             Download
-          </a>
+          </button>
           <ProgressBar
-            bgcolor="green"
+            bgcolor="rgb(8, 211, 218)"
             progress={progress.toFixed()}
             height={7}
           />
